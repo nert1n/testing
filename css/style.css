@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Ubuntu, sans-serif;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ubuntu, sans-serif;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Light");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ubuntu, sans-serif;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Medium");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ubuntu, sans-serif;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-webp body {
+  background: url("img/backgruond.png"); }
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+body span {
+  font-family: Ubuntu;
+  color: rgb(255, 0, 0);
+}
+
+@media (max-width: 1000px) {
+  span {
+    font-size: 20px;
+  }
+
+  span {
+    color: orange;
+  }
+}
+
+.webp body { background: url(img/backgruond.webp); }
