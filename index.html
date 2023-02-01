@@ -3,27 +3,59 @@
 
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20230201131038">
-   <title>Главная</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/img/icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap&_v=20230201191949" rel="stylesheet">
+<title>Аудитерия</title>
+   <link rel="stylesheet" href="/css/style.css?_v=20230201191949">
 </head>
 
 <body>
-   <header>
-   Hello!
-   <picture><source srcset="img/backgruond.webp" type="image/webp"><img src="img/backgruond.png" alt=""></picture>
-</header>
-   <main>
-      <picture><source srcset="img/backgruond.webp" type="image/webp"><img src="img/backgruond.png" alt=""></picture>
-      <span class="intent">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus quos aliquid exercitationem, iure
-         voluptates laudantium eius nulla iusto quis pariatur praesentium maxime eligendi dolore reiciendis amet omnis.
-         Perspiciatis, temporibus!
-      </span>
-   </main>
-   <footer></footer>
-   <script src="js/app.min.js?_v=20230201131038"></script>
+   <header class="header">
+      <div class="container header__container">
+         <div class="header__holder holder flex">
+            <a class="header__logo logo" href="main.html"><img src="img/auditery.svg" alt=""></a>
+            <div class="header__search search flex">
+               <input class="header__input" type="search" placeholder="Название книги которую ищите">
+               <a class="header__loop" href="#"><img src="img/loop.svg" alt=""></a>
+               <div class="header__burger burger">
+                  <span class="burger__span"></span>
+               </div>
+            </div>
+            <div class="header__user user flex">
+               <a class="user__register button--white" href="register.html">Регистрация</a>
+               <a class="user__login button--orange" href="login.html">Войти</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="wrap">
+   <div class="container">
+      <div class="content">
+         <div class="left">
+            <div class="caption">
+               <h1 class="caption__title">
+                  Книги, которые <br> вам хочется слушать
+               </h1>
+               <h2 class="caption__subtitle">
+                  Лучшая подборка аудиокниг по психологиии <br> саморазвитию за все годы издательства...
+               </h2>
+            </div>
+            <div class="elipse">
+               <span></span>
+            </div>
+         </div>
+         <a class="content__button" href="main.html" class="right-button">Выбрать книгу</a>
+         <div class="elipse hidden">
+            <span></span>
+         </div>
+      </div>
+   </div>
+</main>
+   <script src="/js/style.min.js?_v=20230201191949"></script>
 </body>
 
 </html>
